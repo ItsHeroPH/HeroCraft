@@ -1,0 +1,28 @@
+# Choose if the multiplayer sleep is enabled
+# true    - to enable the multiplayer sleep
+# false   _ to disable the multiplayer sleep
+enable: true
+
+# Choose how many percentage of players are needed to sleep
+# eg. (percentage: 20 -> players: 10 -> needed to sleep to skip the night/storm: 2 players)
+percentage: 100
+
+# The normal length of the day and night when not skipping (in seconds)
+# This allows you to speed up or slow down the time
+# Default: 700
+day_length: 700
+
+# Default: 500
+night_length: 500
+
+# The duration (in seconds) of the night when enough players are sleeping
+# Set this to 0 to skip the night instantly
+# A normal night lasts 500 seconds
+night_skip_length: 10
+
+# The time in seconds that players need to wait before they can enter the bed again after leaving it
+bed_enter_delay: 10
+
+# Choose if the message will show up in the following:
+chat_message: true
+action_bar_message: true
