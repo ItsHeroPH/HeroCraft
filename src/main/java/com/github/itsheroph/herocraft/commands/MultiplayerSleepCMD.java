@@ -2,10 +2,8 @@ package com.github.itsheroph.herocraft.commands;
 
 import com.github.itsheroph.herocraft.api.MultiplayerSleepAPI;
 import com.github.itsheroph.herocraft.utils.CommandBase;
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 
@@ -26,6 +24,10 @@ public class MultiplayerSleepCMD extends CommandBase {
         this.mps = mps;
     }
     public boolean run(CommandSender sender, String[] arguments) {
+        if(!sender.hasPermission("hc.multiplayersleep.staff")) {
+            sendMessage(sender, ChatColor.BOLD + "" + ChatColor.RED + "You do not have enough permission to use this command");
+            return true;
+        }
         String alias = arguments[0] + " " + arguments[1];
         String value = arguments[2];
         if(alias.equalsIgnoreCase("enable set")) {

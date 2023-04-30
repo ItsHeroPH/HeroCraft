@@ -4,10 +4,10 @@ main: com.github.itsheroph.herocraft.HeroCraft
 api-version: 1.19
 load: STARTUP
 permissions:
-  hc.multiplayerSleep.staff:
+  hc.multiplayersleep.staff:
     description: "Player can modify the configuration by using the commands"
     default: op
-  hc.multiplayerSleep.monster:
+  hc.multiplayersleep.monster:
     description: "Player can skip the night when the monster is nearby"
     default: op
 commands:
